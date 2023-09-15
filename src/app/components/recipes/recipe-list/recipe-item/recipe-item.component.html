@@ -1,0 +1,14 @@
+
+<div (click)="onSelected()" style="cursor: pointer;" class="alert bg-white shadow-1 border">
+  <div class="row">
+    <div class="col-8">
+        <h4 class="list-group-item-heading">{{recipeItem.name}}</h4>
+        <p class="list-group-item-text">{{recipeItem.description}}</p>
+    </div>
+    <div class="col-4">
+        <img src="{{recipeItem.imagePath}}" alt="" class="img-responsive border img-thumbnail"
+          style="height: 100px;width: 150px;background-size: cover;">
+    </div>
+  </div>
+</div>
+

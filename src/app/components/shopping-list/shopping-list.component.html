@@ -1,0 +1,13 @@
+<div class="container mb-5">
+  <div class="row">
+    <div class="col-6">
+      <h5 class="m-2">Shopping List</h5>
+      <a href="" class="list-group card p-2 rounded-1 mb-2 shadow-1 text-dark border" *ngFor="let item of ingredient">
+        {{item.name}} ({{item.amount}})
+      </a>
+    </div>
+    <div class="col-6 bg-light">
+      <app-shopping-edit (ingredientAdded)="onIngredientAdd($event)"></app-shopping-edit>
+    </div>
+  </div>
+</div>

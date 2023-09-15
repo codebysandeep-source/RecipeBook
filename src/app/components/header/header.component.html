@@ -1,0 +1,30 @@
+<div class="container bg-light">
+  <div class="row">
+
+    <div class="col-10 pt-3">
+      <div class="w-50">
+        <a href="#" class="p-4" style="font-weight: bold;font-size: large;">RECIPE BOOK</a>
+        <ul class="nav alert">
+          <li class="btn shadow-none border "  [class]="isActiveString == 'recipe'? 'bg-primary text-white' : 'bg-white' " (click)="onSelect('recipe')">Recipes</li>
+          <li class="btn shadow-none border mx-2" [class]="isActiveString == 'shopping-list'? 'bg-primary text-white' : 'bg-white'" (click)="onSelect('shopping-list')">Shopping List</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-2 mt-5">
+      <div class="mt-3 shadow-none">
+        <a href="#" (click)="openMenu()" class="btn border shadow-none text-primary dropdown-toggle">
+          Manage
+        </a>
+        <ul class="dropdown-mymenu shadow-2 alert alert-primary" #myMenu>
+          <li>
+            <a class="dropdown-item" href="#">To Shopping List</a>
+            <a class="dropdown-item" href="#">Edit Recipe</a>
+            <a class="dropdown-item" href="#">Delete Recipe</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>

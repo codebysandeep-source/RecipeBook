@@ -1,0 +1,10 @@
+<form #myForm="ngForm">
+<label for="name">Name</label>
+<input type="text" name="name" ngModel class="form-control" />
+<br/>
+<label for="Amount">Amount</label>
+<input type="text" name="amount" ngModel class="form-control" />
+<button class="btn btn-success shadow-1 mt-4" (click)="AddItem()">Add</button>
+<button class="btn btn-danger shadow-1 mt-4 mx-2">Del</button>
+<button class="btn btn-info shadow-1 mt-4">Edit</button>
+</form>

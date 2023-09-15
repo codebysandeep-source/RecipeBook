@@ -1,0 +1,8 @@
+<button class="btn shadow-0 btn-success mx-3 mb-4">New Recipe</button>
+
+<div class="bg-light border p-4">
+  <h4 class="badge badge-warning">Recipe Items</h4>
+<app-recipe-item *ngFor="let r of recipes"
+  [recipeItem]="r">
+</app-recipe-item>
+</div>
