@@ -2,8 +2,8 @@
   margin-top: -7.05em;
   width: 12em;
   margin-left: 10em;
-  background: #3bca96;
-  color: #fff;
+  background: #fff;
+  color: #000;
   border-radius: 5px;
   padding: 3px;
   display: none;
@@ -22,4 +22,7 @@
 ul li {
   text-decoration: none;
   list-style: none ;
+}
+.cursor-pointer{
+  cursor: pointer;
 }

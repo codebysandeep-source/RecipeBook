@@ -1,5 +1,5 @@
 import { Component, Input, OnInit, Renderer2, ViewChild } from '@angular/core';
-
+import { RecipeService } from 'src/app/services/recipe.service';
 @Component({
   selector: 'app-recipe-detail',
   templateUrl: './recipe-detail.component.html',
@@ -7,13 +7,16 @@ import { Component, Input, OnInit, Renderer2, ViewChild } from '@angular/core';
 })
 export class RecipeDetailComponent implements OnInit {
 
-  constructor(private renderer2:Renderer2) { }
+  constructor(private renderer2:Renderer2, private RecipeService:RecipeService) { }
 
   ngOnInit(): void {
   }
 
   @Input() recipe : any;
 
+  onAddToShoopingList(){
+    return this.RecipeService.addIngradientToShoppingList(this.recipe.recipeIngradient);
+  }
 
 
 
