@@ -1,0 +1,25 @@
+.dropdown-mymenu{
+  margin-top: -7.05em;
+  width: 12em;
+  margin-left: 10em;
+  background: #3bca96;
+  color: #fff;
+  border-radius: 5px;
+  padding: 3px;
+  display: none;
+  animation: animate 0.2s ease-in-out;
+}
+
+@keyframes animate {
+  from{
+    width: 1px;
+  }
+}
+
+.dropdown-mymenu a{
+  padding: 5px;
+}
+ul li {
+  text-decoration: none;
+  list-style: none ;
+}

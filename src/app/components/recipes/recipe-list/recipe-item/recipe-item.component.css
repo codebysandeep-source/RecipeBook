@@ -1,0 +1,7 @@
+.recipe-item{
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.recipe-item:hover, .recipe-item:focus, .recipe-item:visited{
+  border: 1px solid green !important;
+}
