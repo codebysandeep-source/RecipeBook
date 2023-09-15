@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
-import { RecipesComponent } from './components/recipes/recipes.component';
+import { RecipesComponent } from './components/recipes/recipes/recipes.component';
 import { RecipeDetailComponent } from './components/recipes/recipe-detail/recipe-detail.component';
 import { RecipeListComponent } from './components/recipes/recipe-list/recipe-list.component';
 import { RecipeItemComponent } from './components/recipes/recipe-list/recipe-item/recipe-item.component';

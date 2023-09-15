@@ -11,7 +11,4 @@ export class Ingredient {
   // you can specify the shortcut properties like this
   constructor(public name:string,public amount:number){}
 
-
-
-
 }
